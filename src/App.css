@@ -1,5 +1,8 @@
 .App {
   text-align: center;
+  background-image: url('npcs/Underdark.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .App-logo {
@@ -23,11 +26,40 @@
   color: #61dafb;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.row-33 {
+  align-content: center;
+  width: 100vw;
+  height: 33vh;
+}
+
+.row-34 {
+  align-content: center;
+  width: 100vw;
+  height: 34vh;
+}
+
+.npc {
+  position: relative;
+  display: inline;
+  align-content: center;
+  text-align: center;
+  opacity: 0.5;
+}
+
+.npc-image {
+  height: 33vh;
+}
+
+.npc-name {
+  position: absolute;
+  background-color: white;
+  border-radius: 8px;
+  padding: 4px;
+  top: -200%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.hovered {
+  opacity: 1;
 }
